@@ -114,6 +114,7 @@ open class GenerateTask @Inject constructor(private val objectFactory: ObjectFac
     /**
      * Skip merge spec files step
      */
+    @Input
     @Optional
     val inputSpecRootDirectorySkipMerge = project.objects.property<Boolean>()
 
