@@ -623,7 +623,7 @@ open class GenerateTask @Inject constructor(private val objectFactory: ObjectFac
 
         inputSpecRootDirectory.ifNotEmpty { inputSpecRootDirectoryValue ->
             var runMergeSpec = true
-            inputSpecRootDirectorySkipMerge.ifNotEmpty { skipMergeValue -> { runMergeSpec = !skipMergeValue }
+            inputSpecRootDirectorySkipMerge.ifNotEmpty { skipMergeValue -> { runMergeSpec = !skipMergeValue } }
             if (runMergeSpec) {
                 run {
                     resolvedInputSpec = MergedSpecBuilder(
